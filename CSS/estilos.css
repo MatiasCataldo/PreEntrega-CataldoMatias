@@ -1,0 +1,18 @@
+.cuerpo{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px !important;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px !important;
+    font-style: italic;
+    text-align: center;
+}
+
