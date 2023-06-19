@@ -1,7 +1,7 @@
  
 function validaCodigo(codigo){
   let codigoValido = false
-  if (codigo > 0 && codigo < 5)
+  if (codigo > 0 && codigo < 7)
     codigoValido = true
   return codigoValido
 }
@@ -19,16 +19,22 @@ function mostrarCuotas(){
 function mostrarPrecio(codigo){
   switch(codigo){
     case 1:
-      console.log("El precio de las bicicletass de Cross Country es:$840.000")
+      console.log("El precio de la Specialized Epic World Cup S-Works es:$1.840.000")
       break
     case 2:
-      console.log("El precio de las bicicletass de Enduro es: $650.000")
+      console.log("El precio de la Trek Supercaliber es: $1.650.000")
       break
     case 3:
-      console.log("El precio de las bicicletass de Downhill es: $1.540.000")
+      console.log("El precio de la Scott Spark es: $1.540.000")
       break
     case 4:
-      console.log("El precio de las bicicletass de Urban es: $540.000")
+      console.log("El precio de la Santa Cruz V10 es: $1.540.000")
+      break
+    case 5:
+      console.log("El precio de la Pivot Phoenix es: $1.540.000")
+      break
+    case 6:
+      console.log("El precio de la Canyon LUX es: $1.540.000")
       break
     default:
       console.warn("Seleccion Incorrecta ⚠️")
