@@ -3,6 +3,19 @@
     margin: 0px;
 }
 
+nav img{
+  background-size: 20px !important;
+  margin-right: 5px;
+  margin-left: 5px;
+  height: 30px;
+  width: 30px;
+}
+
+.carrito{
+  margin-right: 20px;
+  height: 30px;
+  width: 30px;
+}
 
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
