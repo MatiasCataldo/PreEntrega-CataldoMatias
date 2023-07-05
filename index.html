@@ -7,34 +7,37 @@
     <title>Bikes Dynamo</title>
     <link rel="shortcut icon" href="./imagenes/iconobici.png" type="icono">
     <link rel="stylesheet" href="./CSS/estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="./js/index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>    
+    <header>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
             <a>
                 <img src="./imagenes/iconobici.png" href="./index.html" alt="logo pagina">
             </a>
             <a class="navbar-brand" href="./index.html"> Bikes Dynamo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
+                    <form class="form-inline" action="/action_page.php">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+                    </form>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#footer">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ubicacion</a>
+                        <a class="nav-link" href="#footer">Ubicacion</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="#footer">Nosotros</a>
                     </li>
                 </ul>
             </div>
-            <a href="./index.html" class="carrito">
+            <a href="./Paginas/carrito.html" class="carrito">
                 <img src="./imagenes/iconoCarrito.png" alt="icono carrito">
             </a>
         </nav>
@@ -46,179 +49,257 @@
     <section class="articles">
         <article>
             <div class="article-wrapper">
-            <figure>
-                <img src="./imagenes/specialized-sworks.jpeg" alt="" />
-            </figure>
-            <div class="article-body">
-                <h3>1 - Specialized Epic World Cup S-Works</h3>
-                <p>La Specialized Epic World Cup es una bicicleta de montaña de alto rendimiento diseñada para carreras de cross-country. Con su cuadro ligero de fibra de carbono y geometría agresiva, esta bicicleta ofrece una excelente respuesta y eficiencia en terrenos exigentes. Equipada con una suspensión delantera y trasera de calidad, la Epic World Cup absorbe los impactos de manera suave y controlada, brindando una tracción excepcional. Su sistema de transmisión de cambios suaves y precisos permite una aceleración rápida y constante. Esta bicicleta es una opción ideal para los ciclistas que buscan una máquina de competición confiable y veloz en el mundo del cross-country.</p>
-            <a href="#" class="read-more">
-                VER MAS <span class="sr-only">about this is some title</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-            </a>
+                <figure>
+                    <img src="./imagenes/specialized-sworks.jpeg" alt="" />
+                </figure>
+                <div class="article-body">
+                    <h3>1 - Specialized Epic World Cup S-Works</h3>
+                    <p>La Specialized Epic World Cup es una bicicleta de montaña de alto rendimiento diseñada para
+                        carreras de cross-country. Con su cuadro ligero de fibra de carbono y geometría agresiva, esta
+                        bicicleta ofrece una excelente respuesta y eficiencia en terrenos exigentes. Equipada con una
+                        suspensión delantera y trasera de calidad, la Epic World Cup absorbe los impactos de manera
+                        suave y controlada, brindando una tracción excepcional. Su sistema de transmisión de cambios
+                        suaves y precisos permite una aceleración rápida y constante. Esta bicicleta es una opción ideal
+                        para los ciclistas que buscan una máquina de competición confiable y veloz en el mundo del
+                        cross-country.</p>
+                    <a href="#" class="read-more">
+                        ADD <span class="sr-only">about this is some title</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
             </div>
-        </div>
-        </article>
-        <article>
-        <div class="article-wrapper">
-            <figure>
-                <img src="./imagenes/trek-supercaliber.jpg" alt="" />
-            </figure>
-            <div class="article-body">
-                <h3>2 - Trek Supercaliber</h3>
-                <p>La Trek Supercaliber es una bicicleta de montaña diseñada para ofrecer velocidad y rendimiento en las competiciones de cross-country. Con su cuadro ligero y rígido de carbono OCLV, esta bicicleta es ágil y ágil en los senderos técnicos. La característica distintiva de la Supercaliber es su tecnología IsoStrut, que combina la suspensión trasera minimalista con una horquilla delantera de alta gama para ofrecer una conducción suave y eficiente. Esta bicicleta brinda una excelente capacidad de escalada y aceleración, y su sistema de transmisión de cambios rápidos permite una respuesta inmediata. Con la Trek Supercaliber, los ciclistas experimentan la combinación perfecta de velocidad y control en las carreras de cross-country.<p>
-                <a href="#" class="read-more">
-                VER MAS <span class="sr-only">about this is some title</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-                </a>
-            </div>
-        </div>
-        </article>
-        <article>
-        <div class="article-wrapper">
-            <figure>
-                <img src="./imagenes/scott-spark.jpg" alt="" />
-            </figure>
-            <div class="article-body">
-                <h3>3 - Scott Spark</h3>
-                <p>La Scott Spark es una bicicleta de montaña versátil y altamente capaz que combina una geometría ágil con una suspensión de alta calidad. Con un cuadro de fibra de carbono liviano y resistente, la Spark es ágil en los senderos y ofrece una excelente eficiencia de pedaleo. Su suspensión delantera y trasera ajustable permite adaptarse a diferentes terrenos y preferencias de conducción. Equipada con componentes de alta gama, como una transmisión precisa y frenos potentes, la Spark brinda un rendimiento confiable y preciso. Ya sea en carreras de cross-country o en emocionantes aventuras en senderos, la Scott Spark ofrece una conducción rápida, ágil y llena de diversión.</p>
-                <a href="#" class="read-more">
-                VER MAS <span class="sr-only">about this is some title</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-                </a>
-            </div>
-        </div>
         </article>
         <article>
             <div class="article-wrapper">
-            <figure>
-                <img src="./imagenes/SantaCruz.jpg" alt="" />
-            </figure>
-            <div class="article-body">
-                <h3>4 - Santa Cruz V10</h3>
-                <p>La bicicleta de downhill Santa Cruz V10 es una máquina de carreras diseñada específicamente para conquistar los terrenos más extremos. Con un cuadro de carbono de alta resistencia y una geometría agresiva, la V10 ofrece una estabilidad excepcional a altas velocidades y en terrenos difíciles. Su suspensión de larga distancia de recorrido, combinada con un sistema de amortiguación avanzado, absorbe los impactos con facilidad, brindando un control y una tracción superiores. Equipada con componentes de alta gama, como frenos potentes y una transmisión precisa, esta bicicleta permite a los ciclistas enfrentar descensos técnicos con confianza y velocidad. La Santa Cruz V10 es la elección perfecta para aquellos que buscan la máxima adrenalina en el mundo del downhill.</p>
-                <a href="#" class="read-more">
-                VER MAS <span class="sr-only">about this is some title</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-                </a>
+                <figure>
+                    <img src="./imagenes/trek-supercaliber.jpg" alt="" />
+                </figure>
+                <div class="article-body">
+                    <h3>2 - Trek Supercaliber</h3>
+                    <p>La Trek Supercaliber es una bicicleta de montaña diseñada para ofrecer velocidad y rendimiento en
+                        las competiciones de cross-country. Con su cuadro ligero y rígido de carbono OCLV, esta
+                        bicicleta es ágil y ágil en los senderos técnicos. La característica distintiva de la
+                        Supercaliber es su tecnología IsoStrut, que combina la suspensión trasera minimalista con una
+                        horquilla delantera de alta gama para ofrecer una conducción suave y eficiente. Esta bicicleta
+                        brinda una excelente capacidad de escalada y aceleración, y su sistema de transmisión de cambios
+                        rápidos permite una respuesta inmediata. Con la Trek Supercaliber, los ciclistas experimentan la
+                        combinación perfecta de velocidad y control en las carreras de cross-country.
+                    <p>
+                        <a href="#" class="read-more">
+                            ADD <span class="sr-only">about this is some title</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                </div>
             </div>
-        </div>
         </article>
         <article>
             <div class="article-wrapper">
-            <figure>
-                <img src="./imagenes/pivot-phoenix.jpeg" alt="" />
-            </figure>
-            <div class="article-body">
-                <h3>5 - Pivot Phoenix</h3>
-                <p>La bicicleta de downhill Pivot Phoenix es una máquina de alto rendimiento diseñada para conquistar los terrenos más desafiantes en las carreras de descenso. Con un cuadro resistente y duradero construido con aleación de aluminio de alta calidad, la Phoenix ofrece una combinación perfecta de resistencia y rigidez para enfrentar los terrenos más exigentes. Su suspensión de largo recorrido y alta calidad absorbe los impactos con facilidad, brindando una tracción excepcional y un control preciso. Equipada con componentes de alto rendimiento, como frenos de disco potentes y una transmisión suave, la Pivot Phoenix proporciona una experiencia de downhill emocionante y confiable para los ciclistas más exigentes.</p>
-                <a href="#" class="read-more">
-                VER MAS <span class="sr-only">about this is some title</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-                </a>
+                <figure>
+                    <img src="./imagenes/scott-spark.jpg" alt="" />
+                </figure>
+                <div class="article-body">
+                    <h3>3 - Scott Spark</h3>
+                    <p>La Scott Spark es una bicicleta de montaña versátil y altamente capaz que combina una geometría
+                        ágil con una suspensión de alta calidad. Con un cuadro de fibra de carbono liviano y resistente,
+                        la Spark es ágil en los senderos y ofrece una excelente eficiencia de pedaleo. Su suspensión
+                        delantera y trasera ajustable permite adaptarse a diferentes terrenos y preferencias de
+                        conducción. Equipada con componentes de alta gama, como una transmisión precisa y frenos
+                        potentes, la Spark brinda un rendimiento confiable y preciso. Ya sea en carreras de
+                        cross-country o en emocionantes aventuras en senderos, la Scott Spark ofrece una conducción
+                        rápida, ágil y llena de diversión.</p>
+                    <a href="#" class="read-more">
+                        ADD <span class="sr-only">about this is some title</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
             </div>
-        </div>
         </article>
         <article>
-        <div class="article-wrapper">
-            <figure>
-                <img src="./imagenes/Canyon-Lux-Greber.jpg" alt="" />
-            </figure>
-            <div class="article-body">
-                <h3>6 - Canyon LUX</h3>
-                <p>La bicicleta de montaña Cayon Lux es una opción versátil y ágil para los ciclistas que buscan rendimiento en cross-country. Con un cuadro de carbono ligero y resistente, la Lux ofrece una combinación ideal de rigidez y comodidad. Su geometría optimizada y su suspensión eficiente permiten una aceleración rápida y una conducción suave en terrenos variados. Equipada con componentes de alta calidad, como una transmisión de cambios precisos y frenos potentes, esta bicicleta garantiza un rendimiento confiable en cada salida. Ya sea para competir en carreras o disfrutar de aventuras en senderos, la Cayon Lux ofrece una experiencia de conducción ágil y emocionante.</p>
-                <a href="#" class="read-more">
-                VER MAS <span class="sr-only">about this is some title</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-                </a>
+            <div class="article-wrapper">
+                <figure>
+                    <img src="./imagenes/SantaCruz.jpg" alt="" />
+                </figure>
+                <div class="article-body">
+                    <h3>4 - Santa Cruz V10</h3>
+                    <p>La bicicleta de downhill Santa Cruz V10 es una máquina de carreras diseñada específicamente para
+                        conquistar los terrenos más extremos. Con un cuadro de carbono de alta resistencia y una
+                        geometría agresiva, la V10 ofrece una estabilidad excepcional a altas velocidades y en terrenos
+                        difíciles. Su suspensión de larga distancia de recorrido, combinada con un sistema de
+                        amortiguación avanzado, absorbe los impactos con facilidad, brindando un control y una tracción
+                        superiores. Equipada con componentes de alta gama, como frenos potentes y una transmisión
+                        precisa, esta bicicleta permite a los ciclistas enfrentar descensos técnicos con confianza y
+                        velocidad. La Santa Cruz V10 es la elección perfecta para aquellos que buscan la máxima
+                        adrenalina en el mundo del downhill.</p>
+                    <a href="#" class="read-more">
+                        ADD <span class="sr-only">about this is some title</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
             </div>
-        </div>
+        </article>
+        <article>
+            <div class="article-wrapper">
+                <figure>
+                    <img src="./imagenes/pivot-phoenix.jpeg" alt="" />
+                </figure>
+                <div class="article-body">
+                    <h3>5 - Pivot Phoenix</h3>
+                    <p>La bicicleta de downhill Pivot Phoenix es una máquina de alto rendimiento diseñada para
+                        conquistar los terrenos más desafiantes en las carreras de descenso. Con un cuadro resistente y
+                        duradero construido con aleación de aluminio de alta calidad, la Phoenix ofrece una combinación
+                        perfecta de resistencia y rigidez para enfrentar los terrenos más exigentes. Su suspensión de
+                        largo recorrido y alta calidad absorbe los impactos con facilidad, brindando una tracción
+                        excepcional y un control preciso. Equipada con componentes de alto rendimiento, como frenos de
+                        disco potentes y una transmisión suave, la Pivot Phoenix proporciona una experiencia de downhill
+                        emocionante y confiable para los ciclistas más exigentes.</p>
+                    <a href="#" class="read-more">
+                        ADD <span class="sr-only">about this is some title</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="article-wrapper">
+                <figure>
+                    <img src="./imagenes/Canyon-Lux-Greber.jpg" alt="" />
+                </figure>
+                <div class="article-body">
+                    <h3>6 - Canyon LUX</h3>
+                    <p>La bicicleta de montaña Cayon Lux es una opción versátil y ágil para los ciclistas que buscan
+                        rendimiento en cross-country. Con un cuadro de carbono ligero y resistente, la Lux ofrece una
+                        combinación ideal de rigidez y comodidad. Su geometría optimizada y su suspensión eficiente
+                        permiten una aceleración rápida y una conducción suave en terrenos variados. Equipada con
+                        componentes de alta calidad, como una transmisión de cambios precisos y frenos potentes, esta
+                        bicicleta garantiza un rendimiento confiable en cada salida. Ya sea para competir en carreras o
+                        disfrutar de aventuras en senderos, la Cayon Lux ofrece una experiencia de conducción ágil y
+                        emocionante.</p>
+                    <a href="#" class="read-more">
+                        ADD <span class="sr-only">about this is some title</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </article>
         <article>
     </section>
-    <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+    <button id="scrollToTopBtn" onclick="scrollToTop()">⬆️</button> 
+    <footer class="text-white text-center text-lg-start" id="footer" style="background-color: #23242a;">
         <div class="container p-4">
             <div class="row mt-4">
-            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4">Acerca de Nosotros</h5>
-                <p>En nuestra tienda, nos apasiona el ciclismo y creemos en los beneficios que esta actividad aporta a la salud, el medio ambiente y el espíritu aventurero. Por eso, nos esforzamos por ofrecer productos de marcas reconocidas y confiables que combinan innovación, durabilidad y rendimiento excepcionales.</p>
-                <div class="mt-4">
-                <!-- Facebook -->
-                <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
-                <!-- Dribbble -->
-                <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-instagram"></i></a>
-                <!-- Twitter -->
-                <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
-                <!-- Google + -->
-                <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus-g"></i></a>
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Acerca de Nosotros</h5>
+                    <p>En nuestra tienda, nos apasiona el ciclismo y creemos en los beneficios que esta actividad aporta
+                        a la salud, el medio ambiente y el espíritu aventurero. Por eso, nos esforzamos por ofrecer
+                        productos de marcas reconocidas y confiables que combinan innovación, durabilidad y rendimiento
+                        excepcionales.</p>
+                    <div class="mt-4">
+                        <!-- Facebook -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <!-- Dribbble -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                                class="fab fa-instagram"></i></a>
+                        <!-- Twitter -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+                        <!-- Google + -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                                class="fab fa-google-plus-g"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4 pb-1">Busqueda:</h5>
+                    <div class="form-outline form-white mb-4">
+                        <input type="text" id="formControlLg" class="form-control form-control-lg">
+                        <div class="form-notch">
+                            <div class="form-notch-leading" style="width: 9px;">
+                            </div>
+                            <div class="form-notch-middle" style="width: 48.8px; padding-bottom: 10px;"></div>
+                            <div class="form-notch-trailing"></div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26411.40078263159!2d-58.442058794134105!3d-34.571703081745234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20CABA!5e0!3m2!1ses!2sar!4v1688398117254!5m2!1ses!2sar" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <ul class="fa-ul" style="margin-left: 1.65em;">
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Buenos Aires,
+                                Capital Federal, ARG</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                                class="ms-2">bikesdynamo@example.com</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567
+                                88</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">HORARIOS:</h5>
+                    <table class="table text-center text-white">
+                        <tbody class="font-weight-normal">
+                            <tr>
+                                <td>Lunes</td>
+                                <td>9hs - 21hs</td>
+                            </tr>
+                            <tr>
+                                <td>Martes</td>
+                                <td>9hs - 21hs</td>
+                            </tr>
+                            <tr>
+                                <td>Miercoles</td>
+                                <td>9hs - 21hs</td>
+                            </tr>
+                            <tr>
+                                <td>Jueves</td>
+                                <td>9hs - 21hs</td>
+                            </tr>
+                            <tr>
+                                <td>Viernes</td>
+                                <td>9hs - 21hs</td>
+                            </tr>
+                            <tr>
+                                <td>Sabado</td>
+                                <td>9hs - 16hs</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4 pb-1">Busqueda:</h5>
-                <div class="form-outline form-white mb-4">
-                    <input type="text" id="formControlLg" class="form-control form-control-lg">
-                    <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div>
-                <div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div>
-                <ul class="fa-ul" style="margin-left: 1.65em;">
-                <li class="mb-3">
-                    <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Buenos Aires, Capital Federal, ARG</span>
-                </li>
-                <li class="mb-3">
-                    <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">bikesdynamo@example.com</span>
-                </li>
-                <li class="mb-3">
-                    <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
-                </li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4">HORARIOS:</h5>
-                <table class="table text-center text-white">
-                <tbody class="font-weight-normal">
-                    <tr>
-                        <td>Lunes</td>
-                        <td>9hs - 21hs</td>
-                    </tr>
-                    <tr>
-                        <td>Martes</td>
-                        <td>9hs - 21hs</td>
-                    </tr>
-                    <tr>
-                        <td>Miercoles</td>
-                        <td>9hs - 21hs</td>
-                    </tr>
-                    <tr>
-                        <td>Jueves</td>
-                        <td>9hs - 21hs</td>
-                    </tr>
-                    <tr>
-                        <td>Viernes</td>
-                        <td>9hs - 21hs</td>
-                    </tr>
-                    <tr>
-                        <td>Sabado</td>
-                        <td>9hs - 16hs</td>
-                    </tr>
-                </tbody>
-                </table>
-            </div>
         </div>
-    </div>
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2023 Copyright</div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2023 Copyright</div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

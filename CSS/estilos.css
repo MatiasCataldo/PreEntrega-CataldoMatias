@@ -107,6 +107,27 @@ article {
     --link-icon-opacity: 1;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
+
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+  }
+  
+  #scrollToTopBtn:hover {
+    background-color: #333;
+  }
+  
   
   
   /************************ 
@@ -146,4 +167,8 @@ article {
     position: absolute;
     white-space: nowrap; 
     width: 1px;
+  }
+
+  iframe{
+    padding: 10px;
   }

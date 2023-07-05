@@ -1,4 +1,28 @@
- 
+// Muestra u oculta el botón dependiendo de la posición de desplazamiento
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+// Realiza el desplazamiento hacia arriba suave al hacer clic en el botón
+function scrollToTop() {
+  document.body.scrollTop = 0; // Para Safari
+  document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+}
+
+
+
 function validaCodigo(codigo){
   let codigoValido = false
   if (codigo > 0 && codigo < 7)
@@ -68,3 +92,5 @@ function consultarProductos(){
     console.warn("Gracias por visitar nuestra Pagina Web😊")
   }
 }
+
+consultarProductos()
