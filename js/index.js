@@ -57,6 +57,16 @@ function finalizarCompra(){
   console.log(`El costo total de su compra es de $ ${shopping.obtenerSubtotal()}. Muchas gracias por tu compra!`)
 }
 
+function eliminarBicicleta(codigo){
+  const indice = carrito.findIndex((bicicleta) => bicicleta.codigo === codigo);
+  if (indice !== -1) {
+    carrito.splice(indice, 1);
+    console.log(`✅ Bicicleta eliminada del carrito.`);
+  } else {
+    console.log(`⛔️ No se encontró la bicicleta en el carrito.`);
+  }
+}
+
 function comprar(codigo){
   let bicicletaElegida = buscarBicicleta(codigo)
   if (bicicletaElegida !== undefined) {
@@ -65,11 +75,18 @@ function comprar(codigo){
       let respuesta = confirm('¿Deseas llevar otra bicicleta?')
       if (respuesta === true) {
           codigo =  parseInt(prompt("Ingrese el codigo numerico del tipo de bicicleta a buscar: "))
+          mostrarPrecio(codigo)
+          mostrarCuotas()
           comprar(codigo)
       } 
       else{
-          console.table(carrito)
-          finalizarCompra()
+        let resp = confirm('Desea eliminar alguna bicicleta del carrito?')
+        if (resp === true){
+          let cod =  parseInt(prompt("Ingrese el codigo numerico del tipo de bicicleta a eliminar: "))
+          eliminarBicicleta(cod) 
+        }
+        console.table(carrito)
+        finalizarCompra()
       }
   } 
   else{
@@ -83,7 +100,7 @@ function validaCodigo(codigo){
     codigoValido = true
   return codigoValido
 }
- 
+
 function mostrarCuotas(){
   let intereses = " sin interes."
   console.log("Todas nuestras bicicletas tienen: 😎")
